@@ -12,8 +12,13 @@ format: html
 ```
 
 ## Kelly Xiong
+
 ## Shayon Chakraborti
+
 ## Cooper Maberry
+
+## Aashna Mishra
+
 ## Team Visualizations
 
 ```{=html}
@@ -61,4 +66,14 @@ labs(
 title = "Bill Length and Body Mass Compared by Species",
 x = "Bill Length (mm),
 y = "Body Mass (g)")
+
+### Shayon Chakraborti — Body Mass by Species
+
+```{r}
+ggplot(data = penguins, mapping = aes(x = species, y = body_mass_g, fill = species)) +
+  geom_boxplot() +
+  labs(title = "Body Mass by Species",
+       x = "Species",
+       y = "Body Mass (g)",
+       fill = "Species")
 ```
