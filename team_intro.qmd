@@ -61,11 +61,11 @@ ggplot(data = penguins, mapping = aes(x=flipper_length_mm, y=bill_length_mm)) +
 ```{r}
 penguinsdt |> 
 ggplot(aes(x = bill_length_mm, y = body_mass_g, color = species)) +
-geom_point() +
-labs(
-title = "Bill Length and Body Mass Compared by Species",
-x = "Bill Length (mm)",
-y = "Body Mass (g)")
+     geom_point() +
+     labs(
+          title = "Bill Length and Body Mass Compared by Species",
+          x = "Bill Length (mm)",
+          y = "Body Mass (g)")
 ```
 
 ### Shayon Chakraborti — Body Mass by Species
