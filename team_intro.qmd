@@ -66,3 +66,13 @@ ggplot(data = penguins, mapping = aes(x = species, y = body_mass_g, fill = speci
        y = "Body Mass (g)",
        fill = "Species")
 ```
+
+## Aashna Mishra — Bar Plot of Penguin Islands and Species
+
+```{r}
+ggplot(penguins, aes(x = island, fill = species)) +
+  geom_bar(position = "dodge") +
+  labs(title = "Penguin Count by Island and Species",
+       x = "Island", y = "Count") +
+  theme_minimal()
+```
