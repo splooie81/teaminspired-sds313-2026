@@ -12,8 +12,11 @@ format: html
 ```
 
 ## Kelly Xiong
+
 ## Shayon Chakraborti
+
 ## Cooper Maberry
+
 ## Team Visualizations
 
 ```{=html}
@@ -49,4 +52,15 @@ ggplot(data = penguins, mapping = aes(x=flipper_length_mm, y=bill_length_mm)) +
        y= "Bill Length (mm)", 
        color = "Species", 
        shape = "Species")
+```
+
+## Shayon Chakraborti — Body Mass by Species
+
+```{r}
+ggplot(data = penguins, mapping = aes(x = species, y = body_mass_g, fill = species)) +
+  geom_boxplot() +
+  labs(title = "Body Mass by Species",
+       x = "Species",
+       y = "Body Mass (g)",
+       fill = "Species")
 ```
