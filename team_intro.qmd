@@ -1,5 +1,9 @@
 ---
+<<<<<<< Updated upstream
 title: "Team Inspired — Intro"
+=======
+title: "Team Inspire — Intro"
+>>>>>>> Stashed changes
 format: html
 ---
 
@@ -10,6 +14,7 @@ format: html
      editing this same list at the same time — that's expected, and it's your first real
      merge conflict. Resolve it together rather than one person overwriting the other. -->
 ```
+<<<<<<< Updated upstream
 
 ## Kelly Xiong
 
@@ -18,6 +23,8 @@ format: html
 ## Cooper Maberry
 
 ## Aashna Mishra
+=======
+>>>>>>> Stashed changes
 
 ## Team Visualizations
 
@@ -34,11 +41,24 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
-### \[Your Name\] — \[Your Visualization, e.g. "Body Mass by Species"\]
+### \[Mahit Cherku\] — \[Distribution of Penguin Body Mass\]
 
 ```{r}
-# Make your agreed-upon plot here, e.g.:
-# penguins |> ggplot(aes(x = species, y = body_mass_g, fill = species)) + geom_boxplot()
+penguins |>
+  filter(!is.na(body_mass_g)) |>
+  ggplot(aes(x = body_mass_g)) +
+  geom_histogram(
+    binwidth = 250,
+    fill = "steelblue",
+    color = "white",
+    boundary = 0
+  ) +
+  labs(
+    title = "Distribution of Penguin Body Mass",
+    x = "Body mass (g)",
+    y = "Number of penguins"
+  ) +
+  theme_minimal()
 ```
 
 ### Kelly Xiong - Bill Length vs FLipper Length
