@@ -13,7 +13,7 @@ format: html
 
 ## Kelly Xiong
 ## Shayon Chakraborti
-
+## Cooper Maberry
 ## Team Visualizations
 
 ```{=html}
