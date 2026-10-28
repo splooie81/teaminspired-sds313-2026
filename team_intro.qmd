@@ -35,6 +35,7 @@ library(palmerpenguins)
 
 ```{r}
 glimpse(penguins)
+
 ggplot(data = penguins, mapping = aes(x=flipper_length_mm, y=bill_length_mm)) + 
   geom_point(mapping = aes(color=species, shape=species)) + 
   geom_smooth(method="lm") + 
