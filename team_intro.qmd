@@ -5,17 +5,21 @@ format: html
 
 ## Team Members
 
+```{=html}
 <!-- Everyone: add your name below, one per line. You will likely collide with a teammate
      editing this same list at the same time — that's expected, and it's your first real
      merge conflict. Resolve it together rather than one person overwriting the other. -->
+```
 
--
+- 
 
 ## Team Visualizations
 
+```{=html}
 <!-- Each teammate: agree as a team on who's making which plot before anyone starts, so
      no two people create the same visualization. Then add your own section below with
      your name and your one plot. -->
+```
 
 ```{r}
 #| label: setup
@@ -24,7 +28,7 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
-### [Your Name] — [Your Visualization, e.g. "Body Mass by Species"]
+### \[Your Name\] — \[Your Visualization, e.g. "Body Mass by Species"\]
 
 ```{r}
 # Make your agreed-upon plot here, e.g.:
