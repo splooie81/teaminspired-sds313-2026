@@ -81,11 +81,11 @@ ggplot(data = penguins, mapping = aes(x=flipper_length_mm, y=bill_length_mm)) +
 ```{r}
 penguinsdt |> 
 ggplot(aes(x = bill_length_mm, y = body_mass_g, color = species)) +
-geom_point() +
-labs(
-title = "Bill Length and Body Mass Compared by Species",
-x = "Bill Length (mm)",
-y = "Body Mass (g)")
+     geom_point() +
+     labs(
+          title = "Bill Length and Body Mass Compared by Species",
+          x = "Bill Length (mm)",
+          y = "Body Mass (g)")
 ```
 
 ### Shayon Chakraborti — Body Mass by Species
@@ -97,4 +97,15 @@ ggplot(data = penguins, mapping = aes(x = species, y = body_mass_g, fill = speci
        x = "Species",
        y = "Body Mass (g)",
        fill = "Species")
+```
+
+## Aashna Mishra — Bar Plot of Penguin Islands and Species
+
+```{r}
+ggplot(penguins, aes(x = island, fill = species)) +
+  geom_bar(position = "dodge") +
+  labs(title = "Penguin Count by Island and Species",
+       x = "Island", y = "Count")
+
+
 ```
