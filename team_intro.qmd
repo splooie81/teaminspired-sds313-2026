@@ -64,8 +64,9 @@ ggplot(aes(x = bill_length_mm, y = body_mass_g, color = species)) +
 geom_point() +
 labs(
 title = "Bill Length and Body Mass Compared by Species",
-x = "Bill Length (mm),
+x = "Bill Length (mm)",
 y = "Body Mass (g)")
+```
 
 ### Shayon Chakraborti — Body Mass by Species
 
