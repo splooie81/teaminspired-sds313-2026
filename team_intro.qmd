@@ -17,6 +17,8 @@ format: html
 
 ## Cooper Maberry
 
+## Aashna Mishra
+
 ## Team Visualizations
 
 ```{=html}
