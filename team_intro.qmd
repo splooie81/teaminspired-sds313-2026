@@ -1,5 +1,5 @@
 ---
-title: "Team [TEAM NAME] — Intro"
+title: "Team Inspired — Intro"
 format: html
 ---
 
@@ -11,8 +11,9 @@ format: html
      merge conflict. Resolve it together rather than one person overwriting the other. -->
 ```
 
-- 
-
+## Kelly Xiong
+## Shayon Chakraborti
+## Cooper Maberry
 ## Team Visualizations
 
 ```{=html}
@@ -33,4 +34,19 @@ library(palmerpenguins)
 ```{r}
 # Make your agreed-upon plot here, e.g.:
 # penguins |> ggplot(aes(x = species, y = body_mass_g, fill = species)) + geom_boxplot()
+```
+
+### Kelly Xiong - Bill Length vs FLipper Length
+
+```{r}
+glimpse(penguins)
+ggplot(data = penguins, mapping = aes(x=flipper_length_mm, y=bill_length_mm)) + 
+  geom_point(mapping = aes(color=species, shape=species)) + 
+  geom_smooth(method="lm") + 
+  labs(title="Bill Length and Flipper Length", 
+       subtitle="Dimensions for Adelie, Chinstrap, and Gentoo Penguins" , 
+       x= "Flipper Length (mm)", 
+       y= "Bill Length (mm)", 
+       color = "Species", 
+       shape = "Species")
 ```
